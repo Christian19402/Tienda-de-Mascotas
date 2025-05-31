@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Futuro - Pastelería de Vanguardia</title>
+    <link rel="icon" type="image/x-icon" href="./Img/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./Img/logo.jpg" alt="Logo Dulce Futuro">
+                <h1>DULCE FUTURO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#talleres">Talleres</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+        <div class="container">
+        <main>
+            <section id="inicio" class="hero">
+                <img src="./Img/8.jpg" alt="Pastelería futurista">
+                <div class="hero-content">
+                    <h2 class="glow">PASTELERÍA DEL MAÑANA</h2>
+                    <p>Descubre una nueva dimensión de sabores con nuestros productos de repostería innovadores, donde la tradición se encuentra con la tecnología.</p>
+                    <a href="#productos" class="btn pulse">EXPLORAR PRODUCTOS</a>
+                </div>
+            </section>
+
+            <section id="productos">
+                <h2 class="section-title">NUESTROS PRODUCTOS</h2>
+                <div class="products-grid">
+                    <div class="product-card neon-border">
+                        <img src="./Img/2.jpg" alt="Tarta futurista">
+                        <div class="product-info">
+                            <h3>Tarta de Frambuesa de Chocolate</h3>
+                            <p>La tarta de frambuesa de chocolate es un postre exquisito que combina la intensidad del chocolate con la frescura y acidez de las frambuesas</p>
+                            <div class="product-price">
+                                <span class="price">$28.99</span>
+                                <button class="add-to-cart" data-id="1" data-name="Tarta de Frambuesa de Chocolate" data-price="28.99" data-image="./Img/2.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card neon-border">
+                        <img src="./Img/1.jpg" alt="Cupcakes futuristas">
+                        <div class="product-info">
+                            <h3>Pastel de Chocolate con Capas de Caramelo</h3>
+                            <p>Pastel de chocolate con capas de bizcocho, relleno de caramelo y trozos de chocolate con maní, cubierto con ganache y decorado con crema y cacahuetes.</p>
+                            <div class="product-price">
+                                <span class="price">$19.99</span>
+                                <button class="add-to-cart" data-id="2" data-name="Pastel de Chocolate con Capas de Caramelo" data-price="19.99" data-image="./Img/1.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card neon-border">
+                        <img src="./Img/4.jpg" alt="Donuts futuristas">
+                        <div class="product-info">
+                            <h3>Cheesecake de cereza con chocolate.</h3>
+                            <p>Cheesecake con base de galleta de chocolate, relleno cremoso de queso mezclado con cerezas, cubierto de ganache de chocolate y decorado con cerezas frescas y trozos de chocolate</p>
+                            <div class="product-price">
+                                <span class="price">$15.99</span>
+                                <button class="add-to-cart" data-id="3" data-name="Cheesecake de cereza con chocolate" data-price="15.99" data-image="./Img/4.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card neon-border">
+                        <img src="./Img/5.jpg" alt="Macarons futuristas">
+                        <div class="product-info">
+                            <h3>Rollo de chocolate con crema y fresas.</h3>
+                            <p>Tarta con base de masa quebrada, cubierta de ganache de chocolate brillante, decorada con avellanas picadas y dos bombones de chocolate con avellana.</p>
+                            <div class="product-price">
+                                <span class="price">$22.99</span>
+                                <button class="add-to-cart" data-id="4" data-name="Rollo de chocolate con crema y fresas." data-price="22.99" data-image="./Img/5.jpg">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="talleres" class="newsletter">
+                <h3>¡APRENDE REPOSTERÍA FUTURISTA!</h3>
+                <p>Suscríbete para recibir información sobre nuestros talleres exclusivos donde te enseñaremos las técnicas más innovadoras de pastelería molecular y decoración con efectos especiales.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">SUSCRIBIRME</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <h3 class="promo-title">⭐ OFERTAS ESPECIALES</h3>
+            <div class="promo-items">
+                <div class="promo-item">
+                    <img src="./Img/6.jpg" alt="Oferta 1">
+                    <div class="promo-item-details">
+                        <h4>Combo Futurista</h4>
+                        <p>Tarta + Helado de Chocolate</p>
+                        <p class="promo-price">$39.99 (-20%)</p>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <img src="./Img/7.jpg" alt="Oferta 2">
+                    <div class="promo-item-details">
+                        <h4>Flanes de Caramelo</h4>
+                        <p>10 unidades</p>
+                        <p class="promo-price">$49.99 (-15%)</p>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <img src="./Img/3.jpg" alt="Oferta 3">
+                    <div class="promo-item-details">
+                        <h4>Rebanadas de Torta</h4>
+                        <p>8 rebanadas especiales</p>
+                        <p class="promo-price">$25.99 (-30%)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="cart-title">🛒 MI CARRITO</h3>
+            <div class="cart-items" id="cart-items">
+                <p class="empty-cart">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-total" id="cart-total" style="display: none;">
+                <span>Total:</span>
+                <span id="total-amount">$0.00</span>
+            </div>
+            <button class="btn checkout-btn" id="checkout-btn" style="display: none;">FINALIZAR COMPRA</button>
+
+            <div class="newsletter">
+                <h3>¡10% DE DESCUENTO!</h3>
+                <p>Usa el código <strong>FUTURO10</strong> en tu primera compra online.</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Modal del carrito -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>🛒 MI CARRITO</h2>
+                <button class="close-cart" id="close-cart">×</button>
+            </div>
+            <div class="cart-items" id="modal-cart-items">
+                <p class="empty-cart">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-total" id="modal-cart-total" style="display: none;">
+                <span>Total:</span>
+                <span id="modal-total-amount">$0.00</span>
+            </div>
+            <button class="btn checkout-btn" id="modal-checkout-btn" style="display: none;">PROCEDER AL PAGO</button>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación de compra -->
+    <div class="confirmation-modal" id="confirmation-modal">
+        <div class="confirmation-content">
+            <div class="confirmation-header">
+                <h2>🎉 ¡Compra Finalizada!</h2>
+                <button class="close-confirmation" id="close-confirmation">×</button>
+            </div>
+            <div class="confirmation-message" id="confirmation-message">
+                <p>¡Gracias por tu compra!</p>
+                <p>Total: <span id="confirmation-total">$0.00</span></p>
+            </div>
+            <button class="btn confirmation-btn" id="continue-shopping">CONTINUAR COMPRANDO</button>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="./Img/logo.jpg" alt="Logo Dulce Futuro">
+                    <h3>DULCE FUTURO</h3>
+                </div>
+                <p>Innovando en el mundo de la pastelería desde 2025. Combinamos técnicas tradicionales con las últimas tendencias tecnológicas para crear experiencias dulces únicas.</p>
+                <div class="social-links">
+                    <a href="#">📱</a>
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>PRODUCTOS</h4>
+                <ul>
+                    <li><a href="#">Tartas Futuristas</a></li>
+                    <li><a href="#">Cupcakes Cuánticos</a></li>
+                    <li><a href="#">Donuts Holográficos</a></li>
+                    <li><a href="#">Macarons Atómicos</a></li>
+                    <li><a href="#">Postres Moleculares</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Talleres</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACTO</h4>
+                <p>📍 Calle Grabiel LAche, Ciudad Pinar del Río</p>
+                <p>📞 +53 56-67-68-69</p>
+                <p>✉️ dulcefuturo@tood.com</p>
+                <p>🕒 Martes a Domingo: 9:00 - 20:00</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dulce Futuro. Todos los derechos reservados. | Pastelería de vanguardia para los amantes del dulce.</p>
+        </div>
+    </footer>
+
+    <script src="./main.js"> </script>
+</body>
+</html>
